@@ -1,0 +1,19 @@
+// imports config
+@use './config/reset.scss';
+@use './config/cor.scss';
+@use 'sass:math';
+
+// imports components
+@use './components/header.scss';
+
+// functions
+@function converter($px) {
+    @return math.div($px, 16) * 1rem;
+}
+
+// APP
+#app {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
